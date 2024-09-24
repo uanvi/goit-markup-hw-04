@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -29,11 +36,15 @@
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
-            >Web<span class="logo-dark">Studio</span></a
-          >
+            >Web<span class="logo-dark">Studio</span>
+
+            <svg class="header-logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./index.html">Studio</a>
+              <a class="header-nav-link active" href="./index.html">Studio</a>
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link" href="">Portfolio</a>
@@ -64,7 +75,7 @@
     <main>
       <!-- Hero Section -->
       <section class="hero section">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
@@ -114,19 +125,86 @@
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list card-set">
-            <li class="team-item card-set-item">
+            <li class="team-item card-set-item shadow">
               <img
                 src="./images/team/img-gerrero.jpg"
                 width="264"
                 height="260"
                 alt="Photo of Mark Guerrero, Product Designer"
               />
-              <div class="team-names">
-                <h3 class="section-item-title">Mark Guerrero</h3>
-                <p class="section-list-item-text">Product Designer</p>
-              </div>
+
+              <!-- <div class="team-names"> -->
+              <ul class="team-names-about">
+                <li>
+                  <h3 class="section-item-title team-item-title">
+                    Mark Guerrero
+                  </h3>
+                </li>
+                <li>
+                  <p class="section-list-item-text team-list-item-text">
+                    Product Designer
+                  </p>
+                </li>
+                <li>
+                  <ul class="socials team-socials">
+                    <li class="socials-item">
+                      <a
+                        class="socials-link"
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to instagram.com"
+                      >
+                        <svg class="socials-icon" width="40" height="40">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-item">
+                      <a
+                        class="socials-link"
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to twitter.com"
+                      >
+                        <svg class="socials-icon" width="40" height="40">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-item">
+                      <a
+                        class="socials-link"
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to facebook.com"
+                      >
+                        <svg class="header-logo-icon" width="40" height="40">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-item">
+                      <a
+                        class="socials-link"
+                        href="https://linkedinn.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Link to linkedinn.com"
+                      >
+                        <svg class="socials-icon" width="40" height="40">
+                          <use href="./images/icons.svg#icon-linkedinn"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- </div> -->
             </li>
-            <li class="team-item card-set-item">
+            <li class="team-item card-set-item shadow">
               <img
                 src="./images/team/img-ford.jpg"
                 width="264"
@@ -134,11 +212,22 @@
                 alt="Photo of Tom Ford, Frontend Developer"
               />
               <div class="team-names">
-                <h3 class="section-item-title">Tom Ford</h3>
-                <p class="section-list-item-text">Frontend Developer</p>
+                <ul>
+                  <li>
+                    <h3 class="section-item-title team-item-title">Tom Ford</h3>
+                  </li>
+                  <li>
+                    <p class="section-list-item-text team-list-item-text">
+                      Frontend Developer
+                    </p>
+                  </li>
+                  <li>
+                    <ul></ul>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="team-item card-set-item">
+            <li class="team-item card-set-item shadow">
               <img
                 src="./images/team/img-garcia.jpg"
                 width="264"
@@ -146,11 +235,22 @@
                 alt="Photo of Camila Garcia, Marketing specialist"
               />
               <div class="team-names">
-                <h3 class="section-item-title">Camila Garcia</h3>
-                <p class="section-list-item-text">Marketing</p>
+                <ul>
+                  <li>
+                    <h3 class="section-item-title team-item-title">
+                      Camila Garcia
+                    </h3>
+                  </li>
+                  <li>
+                    <p class="section-list-item-text team-list-item-text">
+                      Marketing
+                    </p>
+                  </li>
+                  <li><ul></ul></li>
+                </ul>
               </div>
             </li>
-            <li class="team-item card-set-item">
+            <li class="team-item card-set-item shadow">
               <img
                 src="./images/team/img-willson.jpg"
                 width="264"
@@ -158,8 +258,21 @@
                 alt="Photo of Daniel Wilson, UI Designer"
               />
               <div class="team-names">
-                <h3 class="section-item-title">Daniel Wilson</h3>
-                <p class="section-list-item-text">UI Designer</p>
+                <ul>
+                  <li>
+                    <h3 class="section-item-title team-item-title">
+                      Daniel Wilson
+                    </h3>
+                  </li>
+                  <li>
+                    <p class="section-list-item-text team-list-item-text">
+                      UI Designer
+                    </p>
+                  </li>
+                  <li>
+                    <ul></ul>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -172,7 +285,7 @@
         <div class="container">
           <h2 class="section-title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list card-set">
-            <li class="card-set-item">
+            <li class="portfolio-item card-set-item shadow">
               <img
                 src="./images/portfolio/img-p1.jpg"
                 alt="Banking App"
@@ -183,7 +296,7 @@
                 <p class="section-list-item-text">App</p>
               </div>
             </li>
-            <li class="card-set-item">
+            <li class="card-set-item shadow">
               <img
                 src="./images/portfolio/img-p2.jpg"
                 alt="Cashless Payment"
@@ -194,7 +307,7 @@
                 <p class="section-list-item-text">Marketing</p>
               </div>
             </li>
-            <li class="card-set-item">
+            <li class="card-set-item shadow">
               <img
                 src="./images/portfolio/img-p3.jpg"
                 alt="Meditation App"
@@ -205,7 +318,7 @@
                 <p class="section-list-item-text">App</p>
               </div>
             </li>
-            <li class="card-set-item">
+            <li class="card-set-item shadow">
               <img
                 src="./images/portfolio/img-p4.jpg"
                 alt="Taxi Service"
@@ -216,7 +329,7 @@
                 <p class="section-list-item-text">Marketing</p>
               </div>
             </li>
-            <li class="card-set-item">
+            <li class="card-set-item shadow">
               <img
                 src="./images/portfolio/img-p5.jpg"
                 alt="Screen Illustrations"
@@ -227,7 +340,7 @@
                 <p class="section-list-item-text">Design</p>
               </div>
             </li>
-            <li class="card-set-item">
+            <li class="card-set-item shadow">
               <img
                 src="./images/portfolio/img-p6.jpg"
                 alt="Online Courses"
