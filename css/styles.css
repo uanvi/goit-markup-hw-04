@@ -170,8 +170,8 @@ button {
   fill: currentColor;
 }
 .shadow {
-  box-shadow: 0px 1px 6px 0px var(--grey), 0px 1px 1px 0px var(--grey),
-    0px 2px 1px 0px var(--grey);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .header-shadow {
@@ -231,6 +231,7 @@ button {
   color: var(--ocean);
 }
 .header-nav-link {
+  position: relative;
   display: block;
   padding: 24px 0;
   color: var(--navy-blue);
@@ -247,9 +248,14 @@ button {
   border-radius: 2px;
   background: transparent;
 }
+.header-nav-link.active {
+  color: var(--ocean);
+}
 .header-nav-link.active::after {
   background: var(--ocean);
+  color: var(--ocean);
 }
+
 .header-adress-list {
   display: flex;
   gap: 40px;
@@ -438,8 +444,8 @@ button:focus {
   transition: var(--anim-box-shadow);
 }
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px 0px var(--grey), 0px 1px 1px 0px var(--grey),
-    0px 2px 1px 0px var(--grey);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-item:hover .overlay-text {
   transform: translateY(0);
