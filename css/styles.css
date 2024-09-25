@@ -20,7 +20,7 @@
   --indent-row: 24px;
   --indent-column: var(--indent-row);
 
-  --anim-fast: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-box-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --anim-overlay: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --anim-header-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -152,7 +152,7 @@ button {
   color: var(--iris);
   border: 1px solid var(--border-cl);
   border-radius: 10px;
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
   transition-property: color, border-color;
 } */
 .social-link {
@@ -163,7 +163,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
 }
 .social-list:hover .social-link,
 .social-list:focus .social-link {
@@ -228,7 +228,7 @@ button {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
 }
 .header-nav-item a:hover {
   color: var(--ocean);
@@ -264,7 +264,7 @@ button {
   font-size: 16px;
   line-height: 150%;
   color: var(--ocean);
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
 }
 .header-adress-link {
   letter-spacing: 0.02em;
@@ -318,7 +318,7 @@ button {
   text-align: center;
   display: block;
   margin: 0 auto;
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
 }
 
 button:hover {
@@ -439,10 +439,10 @@ button:focus {
   overflow: hidden;
 }
 .portfolio-item {
-  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: var(--anim-box-shadow);
 }
 .portfolio-item:hover .overlay-text {
-  transform: translateY(0);
+  transform: translateY(0); ???
 }
 .overlay-text {
   position: absolute;
@@ -501,7 +501,7 @@ button:focus {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transition: var(--anim-fast);
+  transition: var(--anim-box-shadow);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
