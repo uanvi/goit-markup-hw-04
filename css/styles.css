@@ -479,6 +479,7 @@ button:focus {
 .footer-flex {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .footer-logo-golder {
   display: inline-block;
@@ -498,13 +499,15 @@ button:focus {
   display: inline-block;
 }
 .footer-social-list {
-  padding: 20px 0px;
+margin-top: 16px;
+  gap: 16px;
 }
 
 .footer-social-text {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 .footer-social-link {
   display: flex;
@@ -514,7 +517,7 @@ button:focus {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transition: var(--anim-box-shadow);
+  transition: var(--anim-header-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
