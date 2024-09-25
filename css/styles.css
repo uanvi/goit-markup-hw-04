@@ -175,9 +175,9 @@ button {
 }
 
 .header-shadow {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
 
 /* End Common   */
 
@@ -226,7 +226,7 @@ button {
 .header-nav-link.current {
   color: var(--ocean);
 }
-.header-nav-item a:hover, 
+.header-nav-item a:hover,
 .header-nav-item a:focus {
   color: var(--ocean);
 }
@@ -276,7 +276,8 @@ button {
 
 /* Hero */
 .hero {
-  background-image: linear-gradient(var(--grey), var(--grey)),url(../images/hero/people-office.jpg);
+  background-image: linear-gradient(var(--grey), var(--grey)),
+    url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -436,8 +437,12 @@ button:focus {
 .portfolio-item {
   transition: var(--anim-box-shadow);
 }
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px 0px var(--grey), 0px 1px 1px 0px var(--grey),
+    0px 2px 1px 0px var(--grey);
+}
 .portfolio-item:hover .overlay-text {
-  transform: translateY(0); ???
+  transform: translateY(0);
 }
 .overlay-text {
   position: absolute;
@@ -487,7 +492,7 @@ button:focus {
   display: inline-block;
 }
 .footer-social-list {
-margin-top: 16px;
+  margin-top: 16px;
   gap: 16px;
 }
 
@@ -505,7 +510,7 @@ margin-top: 16px;
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
-  transition: var(--anim-header-color);
+  transition: var(--anim-background-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
