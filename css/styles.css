@@ -70,7 +70,6 @@ button {
   font-family: inherit;
   color: currentColor;
   cursor: pointer;
-  transition: var(--anim-background-color);
 }
 
 /* Common */
@@ -187,6 +186,11 @@ button {
     0px 2px 1px 0px var(--grey);
 }
 
+.header-shadow {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
 /* End Common   */
 
 /* Header */
@@ -198,11 +202,6 @@ button {
   align-items: center;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
 .logo {
   font-family: var(--second-family);
   font-size: 18px;
@@ -219,6 +218,11 @@ button {
 .logo-light {
   color: var(--cloud);
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
 .header-nav-list {
   display: flex;
   gap: 40px;
@@ -226,15 +230,15 @@ button {
 }
 .header-nav-item {
   position: relative;
-  color: var(--ocean);
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
   transition: var(--anim-box-shadow);
 }
-.header-nav-item a:hover {
+.header-nav-link.current {
   color: var(--ocean);
 }
+.header-nav-item a:hover, 
 .header-nav-item a:focus {
   color: var(--ocean);
 }
@@ -319,7 +323,7 @@ button {
   text-align: center;
   display: block;
   margin: 0 auto;
-  transition: var(--anim-box-shadow);
+  transition: var(--anim-background-color);
 }
 
 button:hover {
@@ -476,6 +480,10 @@ button:focus {
   display: flex;
   gap: 120px;
 }
+.footer-logo-golder {
+  display: inline-block;
+  margin-right: 120px;
+}
 .footer-text {
   max-width: 264px;
   line-height: 150%;
@@ -486,7 +494,9 @@ button:focus {
   display: inline-block;
   margin-bottom: 16px;
 }
-
+.footer-social-holder {
+  display: inline-block;
+}
 .footer-social-list {
   padding: 20px 0px;
 }
