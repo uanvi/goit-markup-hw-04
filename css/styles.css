@@ -137,7 +137,6 @@ button {
 .social-list {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   gap: 24px;
 }
 .social-item {
@@ -156,6 +155,10 @@ button {
 }
 .social-list:hover .social-link,
 .social-list:focus .social-link {
+  background-color: var(--ocean);
+}
+.social-link:hover,
+.social-link:focus {
   background-color: var(--ocean);
 }
 .socials-icon {
@@ -334,8 +337,6 @@ button:focus {
 .features-list {
   gap: 24px;
 }
-.features-item {
-}
 .features-item-text {
   letter-spacing: 0.02em;
   line-height: 150%;
@@ -389,10 +390,6 @@ button:focus {
 .team-social-list {
   padding: 0px 16px;
 }
-.team-socials {
-  /* --icon-fill: rgb(var(--iris))
-  --border-cl: rgb(var(--iris) / 10%); */
-}
 .team-item-title {
   text-align: center;
 }
@@ -422,20 +419,6 @@ button:focus {
   --indent-row: 48px;
   --indent-col: 24px;
 }
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--overlay-gradient);
-  transition: var(--anim-slow);
-} */
 .overlay-wrapper {
   position: relative;
   overflow: hidden;
@@ -454,13 +437,11 @@ button:focus {
   position: absolute;
   transform: translateY(100%);
   transition: var(--anim-overlay);
-  /* overflow: auto; */
   background: var(--iris);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.32px;
