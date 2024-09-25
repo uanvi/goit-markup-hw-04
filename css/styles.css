@@ -23,6 +23,7 @@
   --anim-box-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --anim-overlay: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --anim-header-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-background-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* base */
@@ -69,6 +70,7 @@ button {
   font-family: inherit;
   color: currentColor;
   cursor: pointer;
+  transition: var(--anim-background-color);
 }
 
 /* Common */
@@ -282,11 +284,10 @@ button {
 
 /* Hero */
 .hero {
-  background-image: linear-gradient(var(--grey), var(--grey)),
-    url(../images/hero/people-office\ 1.jpg);
+  background-image: linear-gradient(var(--grey), var(--grey)),url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
-
-  background-position: 0 0;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   text-align: center;
 }
