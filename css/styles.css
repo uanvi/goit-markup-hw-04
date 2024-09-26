@@ -458,7 +458,6 @@ button:focus {
 }
 .footer-flex {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 .footer-logo-golder {
